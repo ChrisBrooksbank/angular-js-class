@@ -348,6 +348,7 @@ not just copying HTML but also bringing in the scope with it
 
 
 Allows the user of your directive to give you the HTML they want you to work with.
+
 ----------------------------
 
 quick look at $http, low level direct API
@@ -372,15 +373,52 @@ Works very well with angular data binding
 
 Testing
 
+everything should be easily testable
 
+unit testing
+AND
+end to end testing - no time to cover this today
 
+mocked or stubbed out everything except unit you are testing
 
+mocha or *Jasmine* are test frameworks to choose from
+test server/runner = Karma
+assertions : chai, referree
+BDD style for assertions and suite
 
+angularmocks file, gives us module()
 
+what do we want to inject ? services
+mocks : function voyeurism, spy on function
+Jasmine.createSpy();
+spy("howdy?")
 
+stubs :
+fake out dependancies of unit, to make testing easier
 
+mocks and stubs are both fakes
 
+-----------------------------
 
+tracking service
+mock out $http, so use a mock
 
+exercises/first-test
+didnt get final test working yet !
 
+------------------------------
+
+testing directives
+harder !
+
+need $compile service
+need $rootScope
+
+------------------------------
+
+testing controllers
+javascript thats been given a *scope*, they dont know about DOM
+easy to test
+
+need to look at testing again !
 
