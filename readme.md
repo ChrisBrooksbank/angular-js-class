@@ -1,5 +1,8 @@
 Tim Ruffles
 
+28th March 2014
+The Hub, 80 Haymarket
+
 * Write own components
 * data binding
 * declarative
@@ -169,4 +172,82 @@ basket-model rather than ng-model
 [basketCode]http://jsbin.com/winar/1/edit
 
 ----------------
+
+LUNCH
+
+-----------------
+
+Angulars module system
+
+A service is some code, thats all !
+what they change is, how one piece of code accesses another
+> Dependancy Injection
+DI is goal, services is Angular way to achieve
+Services live in modules
+
+app="some module" OR angular.bootstrap( someElement, [someModule])
+
+app.factory, your functions return value is your service
+
+we define services without dependencies with value
+app.value("adminrole", "ADMIN-user")
+
+One module is ng, hence ng-repeat, ng-hide ......
+
+So changes to code, move and define dependancies
+
+uglify can break your code
+
+--------------------------------
+
+http://jsbin.com/winar
+follow coding realtime !
+
+myModule.factory("User", function(Sync) ..... )
+
+app.controller("Auth", function( User, $Scope))
+
+// User is a service, $Scope is actually not a service its a variable
+
+Angular looks at the *name* of the argument to find the code to inject
+uses RegEx - dirty secret :)
+
+--------------------------------
+
+project structure
+directions src test vendor
+mkdir src
+mkdir src/{core,accounts,billing,teams,cat} -- team is name of module
+
+mkdir $dir/{controllers,directives,models,helpers}
+**terminal tip**
+
+---------------------------------
+
+Filters
+
+* quick, declarative transformation of output, e.g. date displayed nicely
+* works with data binding
+* pipe syntax
+
+Syntax sugar around factory
+app.filter("everyother", function() { blah; })
+
+--------------------------------
+
+exercise crud-mvc
+
+factory documented in $provide, on angularjs site
+developers guide.
+
+validation also is in angular
+
+
+
+
+
+
+
+
+
 

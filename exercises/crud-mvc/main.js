@@ -1,11 +1,16 @@
 var app = angular.module("exercise",[]);
 
 app.controller("orderList",function($scope) {
-  // YOUR CODE
+  $scope.removeOrder = function(index)
+  {
+  	$scope.orders.splice(index,1);
+  }
 });
 
 app.controller("addOrder",function($scope) {
-  // YOUR CODE
+  $scope.add = function(){ $scope.orders.push(
+  	{text: $scope.neworder
+  }); }
 });
 
 app.controller("orders",function($scope) {
@@ -15,5 +20,7 @@ app.controller("orders",function($scope) {
     {text:"polenta meringue"},
     {text:"half a baker's dozen of unboiled bagles"}
   ];
+
+
 })
 
