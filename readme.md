@@ -1,7 +1,19 @@
-AngularJS Class
-Tim Ruffles
+# AngularJS Class with Tim Ruffles
+
 28th March 2014
 The Hub, 80 Haymarket
+
+# Githubs
+
+[Tims github]https://github.com/timruffles/angular-js-class
+
+[My github, my changes on dev branch]
+https://github.com/ChrisBrooksbank/angular-js-class
+
+Githubs have slides, as well as exercises
+
+## Session Notes
+
 
 * Write own components
 * data binding
