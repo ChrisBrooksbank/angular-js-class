@@ -12,6 +12,9 @@ app.controller("child",function($scope) {
     setTimeout(function() {
       $scope.model.count += 1
       $scope.$apply()
+
+      // this wont give us exception handling
+      // to do that, put the setTimeout call insider the call to $apply()
     },250); // just perceptible delay
   }
 })
