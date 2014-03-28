@@ -1,5 +1,5 @@
+AngularJS Class
 Tim Ruffles
-
 28th March 2014
 The Hub, 80 Haymarket
 
@@ -242,12 +242,55 @@ developers guide.
 
 validation also is in angular
 
+got it working !
 
+------------------------------
 
+A module
+routes : ng-route, can be replaced by another, more fully featured routing system
+add a script src tag
 
+routes is complex but not complicated
 
+location, route, routeParams i.e three services
 
+one directive ng-view = where content appears for current route
 
+$routeProvider = the class to configure the service
+$locationProvider = configure how URL works
+$routeParams, dont need to configure
 
+pushstate urls, IE10 or > !
+
+.when("url pattern")
+templaterURL: "templateurl"
+controller: "controllerName", or bake controller into template
+
+route provider API docs
+
+a good route alternative is stateProvider
+
+-----------------------------------
+
+Template
+
+file urls, cant do ajax, load templates, put can put HTML in script tag, type = text/angular, HACK
+
+>	  <!-- TEMPLATES -->
+        <script type="text/ng-template" id="home.html">
+          <h1>Home</h1> 
+        </script>
+
+--------
+
+location
+
+routeParams
+
+**ui-router** much better router, on github, angular team
+
+----------------------------------
+
+exercises/routes
 
 
