@@ -3,7 +3,7 @@
 28th March 2014
 The Hub, 80 Haymarket
 
-# Githubs
+## Githubs
 
 [Tims github]https://github.com/timruffles/angular-js-class
 
@@ -12,8 +12,7 @@ https://github.com/ChrisBrooksbank/angular-js-class
 
 Githubs have slides, as well as exercises
 
-## Session Notes
-
+## Unstructured Session Notes
 
 * Write own components
 * data binding
@@ -294,7 +293,6 @@ file urls, cant do ajax, load templates, put can put HTML in script tag, type = 
         </script>
 
 --------
-
 location
 
 routeParams
@@ -304,5 +302,22 @@ routeParams
 ----------------------------------
 
 exercises/routes
+
+--------------
+
+Directives
+
+a directive, small !
+
+element names ( IE9 + )
+
+shorthand : return a linking function, linking def of directive to a specific dom element in a specific scope
+
+ng-model -> ngModel
+attrib   -> directive name
+
+advanced directves, look at $compile
+
+app.directive("somename", function($location) { return { link: function(scope,el,attrs){}}})
 
 
