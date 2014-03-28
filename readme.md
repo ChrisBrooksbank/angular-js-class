@@ -320,4 +320,67 @@ advanced directves, look at $compile
 
 app.directive("somename", function($location) { return { link: function(scope,el,attrs){}}})
 
+scope,el,attrs are NOT DI, have to follow positional
+
+------------------------
+
+isolate scopes
+scope: true means gets own child scope
+or pass in a scope: {} , our own object !, isolate scope
+
+Directive controllers e.g. radio buttons
+directives can need controllers too
+
+complex-directive
+excercise ( not time to do )
+tours, having created component, a non dev can create a tour
+
+-------------------------
+
+Transclusion
+
+Function to clone and compile a chunk of HTML
+
+not just copying HTML but also bringing in the scope with it
+
+1. compile step, looks at directive
+2. turns into compile function
+
+
+Allows the user of your directive to give you the HTML they want you to work with.
+----------------------------
+
+quick look at $http, low level direct API
+$resource = JSON-record, useful for RESTful apis
+
+promises
+.then( function-if-fufiled or sideeffect, 
+	   function-if-broken )
+
+a then is either a side-effect, or a transformation ( of value given )
+chain up logic asnychronously
+$q ( Q lite )
+JQuery promises are broken !
+
+has a mock backend, $httpBackEnd
+
+$resource gives you back an empty instance, rather than a promise
+when request is fulfilled the instance gets the actual data
+Works very well with angular data binding
+
+-----------------------------------
+
+Testing
+
+
+
+
+
+
+
+
+
+
+
+
 
